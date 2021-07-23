@@ -1,4 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
 *{
-    font-family: 'Roboto';
-    background-color: #ffff;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html {
+    scroll-behavior: smooth;
+    transition: all 0.3s ease;
+}
+.max-width {
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+/* navbar styling */
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 30px 0;
+    font-family: 'Roboto',sans-serif;
+    transition: all 0.3s ease;
+}
+.navbar.sticky{
+    padding: 15px 0;
+    background: #264653;
+}
+.navbar .max-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo a {
+    color: white;
+    font-size: 35px;
+    font-weight: 400;
+}
+.navbar .logo a span {
+    color: #48cae4;
+    transition: all 0.3s ease;
+}
+.navbar.sticky .logo a span {
+    color: white;
+}
+.navbar .menu li {
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+.navbar .menu li a:hover{
+    color: #48cae4;
+}
+
+
+/* home section styling */
+.home{
+    display: flex;
+    background-color: #363a41;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+    font-family: 'Roboto',sans-serif;
+}
+.home .max-width {
+    margin: auto 0 auto 40px;
+}
+.home .home-content .text-1 {
+    font-size: 35px;
+}
+.home .home-content .text-2 {
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+.home .home-content .text-3 {
+    font-size: 40px;
+    margin: 5px 0;
+    
+}
+.home .home-content .text-3 .span {
+    color: #fff;
+    font-weight: 500;
+}
+
+
+
+/* project styling */
+section{
+    padding: 80px 0;
+}
+.project{
+    font-family: 'Roboto',sans-serif;
+}
+.project .title {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #264653;
+    color: #fff;
+    padding: 12px 36px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    font-size: 45px;
+    font-weight: 500;
+    font-family: 'Roboto',sans-serif;
+}
+.project .under-title {
+    position: relative;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    font-family: 'Roboto',sans-serif;
+}
+
+.project .project-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.project .project-content .left {
+    text-align: center;
+}
+.project .project-content .left img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 30px;
+}
+.project .project-content .left .text{
+    font-family: 'Roboto',sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.project .project-content .right {
+    text-align: center;
+}
+.project .project-content .right img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 30px;
+}
+.project .project-content .right .text{
+    font-family: 'Roboto',sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+/* contact styling */
+.contact {
+    padding: 80px 0;
+    background-color: #363a41;
+    font-family: 'Roboto',sans-serif;
+}
+
+.contact .max-width {
+    color: #fff;   
+}
+.contact .title {
+    position: relative;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    font-family: 'Roboto',sans-serif;
+}
+.contact .menu li {
+    list-style: none;
+    display: flex;
+}
+.contact .menu li a {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 10px;
+    transition: color 0.3s ease;
+}
+.contact .menu li a:hover{
+    color: #48cae4;
+}
+footer {
+    background: #363a41;    
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Roboto',sans-serif;
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 30px;
+}
+footer span:hover {
+    color: #48cae4;
 }
