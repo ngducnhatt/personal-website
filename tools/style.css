@@ -1,0 +1,15 @@
+*{
+    font-family: sans-serif;
+}
+h1 {
+    text-align: center;
+}
+a:link {
+    color: black;
+}
+a:hover {
+    color: red;
+}
+a:active {
+    color: black;
+}
