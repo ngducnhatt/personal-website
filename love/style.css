@@ -11,8 +11,7 @@ body {
   align-items: center;
   flex-wrap: wrap;
   background: #161623;
-  background-image: linear-gradient( rgba(0, 0, 0,0), rgba(0, 0, 0,0.9) ),url(../imgs/background.jpg);
-  
+  background-image: linear-gradient( rgba(0, 0, 0,0), rgba(0, 0, 0,0.9),url(../imgs/background.jpg));
   background-size: 150%;
   min-height: 100vh;
 }
