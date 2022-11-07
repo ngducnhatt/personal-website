@@ -11,9 +11,9 @@ body {
   align-items: center;
   flex-wrap: wrap;
   background: #161623;
-  background-image: url(./background2.jpg);
-  background-size: 150%;
+  background-image: linear-gradient( rgba(0, 0, 0,0), rgba(0, 0, 0,0.9) ),url(../imgs/background.jpg);
   
+  background-size: 150%;
   min-height: 100vh;
 }
 
@@ -97,6 +97,7 @@ section::after {
 }
 
 .container .cardtime .content .imgBx {
+  size: 150, 150;
   position: relative;
   width: 150px;
   height: 150px;
@@ -110,7 +111,7 @@ section::after {
 
 .container .cardtime .content .imgBx:hover {
   opacity: 1;
-  transform: translateY(-10px);
+  transform:scale(1.1);
 }
 
 .container .card:hover .content {
